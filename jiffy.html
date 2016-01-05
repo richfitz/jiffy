@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<title>jiffy_random. jiffy 0.0.1</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="">
+
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/bootstrap-responsive.css" rel="stylesheet">
+<link href="css/highlight.css" rel="stylesheet">
+<link href="css/staticdocs.css" rel="stylesheet">
+
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+  </head>
+
+  <body>
+    <div class="navbar">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="brand" href="#">jiffy 0.0.1</a>
+      <div class="nav">
+        <ul class="nav">
+          <li><a href="index.html"><i class="icon-home icon-white"></i> Index</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="container">
+      <header>
+        
+      </header>
+      
+      <h1>Download a random gif from giphy</h1>
+
+<div class="row">
+  <div class="span8">
+    <h2>Usage</h2>
+    <pre><div>jiffy_random(tag&nbsp;=&nbsp;NULL, type&nbsp;=&nbsp;"gifs", what&nbsp;=&nbsp;"original", format&nbsp;=&nbsp;"gif", dest&nbsp;=&nbsp;NULL, quiet&nbsp;=&nbsp;FALSE)</div>
+<div>jiffy_translate(phrase, type&nbsp;=&nbsp;"gifs", what&nbsp;=&nbsp;"original", format&nbsp;=&nbsp;"gif", dest&nbsp;=&nbsp;NULL, quiet&nbsp;=&nbsp;FALSE)</div></pre>
+    
+    <h2>Arguments</h2>
+    <dl>
+      <dt>tag</dt>
+      <dd>An optional tag to search on.  If omitted then you git
+a random image pulled from the giphy's trending stream (I
+believe).</dd>
+      <dt>type</dt>
+      <dd>Either "gifs" or "stickers" (or a partial string match
+to either).  The default is to return gifs.</dd>
+      <dt>what</dt>
+      <dd>The type of image to download.  <code>original</code> will
+always be available but giphy supplies <code>fixed_height</code>,
+<code>fixed_width</code> <code>downsized</code>, etc.  See
+<code>names(x$images)</code> for possible options for a given image.
+The default is to download the original (largest) gif.</dd>
+      <dt>format</dt>
+      <dd>The format to download in.  Default is gif, but
+<code>mp4</code> and <code>webp</code> are often available (for
+<code>what="looping"</code> the only option is <code>mp4</code>.</dd>
+      <dt>dest</dt>
+      <dd>Destination to download the file to.  Default is a
+temporary file.</dd>
+      <dt>quiet</dt>
+      <dd>Logical indicating if progress bars during download
+should be suppressed.</dd>
+      <dt>phrase</dt>
+      <dd>A phrase to search for</dd>
+    </dl>
+    
+    <div class="Value">
+      <h2>Value</h2>
+
+      <p><dl>
+A filename of the downloaded file.
+</dl></p>
+  
+    </div>
+
+    <div class="Description">
+      <h2>Description</h2>
+
+      <p>Download a random gif from giphy.</p>
+  
+    </div>
+    
+    <h2 id="examples">Examples</h2>
+    <pre class="examples"><div class='input'>## Not run: 
+# # Download a random cat:
+# gif &lt;- jiffy_random(&quot;cat&quot;)
+# show_gif(gif)
+# 
+# # MRW someone suggests not using stringsAsFactors=FALSE
+# gif &lt;- jiffy_translate(&quot;hell no&quot;)
+# show_gif(gif)
+# ## End(Not run)
+</div></pre>
+  </div>
+  <div class="span4">
+    <!-- <ul>
+      <li>jiffy_random</li><li>jiffy_translate</li>
+    </ul>
+    <ul>
+      
+    </ul> -->
+      
+        
+  </div>
+</div>
+      
+      <footer>
+      <p class="pull-right"><a href="#">Back to top</a></p>
+<p>Built by <a href="https://github.com/hadley/staticdocs">staticdocs</a>. Styled with <a href="http://twitter.github.com/bootstrap">bootstrap</a>.</p>
+      </footer>
+    </div>
+  </body>
+</html>
