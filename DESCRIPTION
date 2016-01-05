@@ -1,0 +1,17 @@
+Package: jiffy
+Title: Interface to 'Giphy'
+Version: 0.0.1
+Author: Rich FitzJohn
+Maintainer: Rich FitzJohn <rich.fitzjohn@gmail.com>
+Description: Interface to 'Giphy'.  The correct pronouciation of this
+    package is "yiffy".
+License: MIT + file LICENSE
+LazyData: true
+URL: https://github.com/richfitz/jiffy
+BugReports: https://github.com/richfitz/jiffy/issues
+Imports:
+    httr
+Suggests:
+    shiny,
+    testthat
+RoxygenNote: 5.0.1
